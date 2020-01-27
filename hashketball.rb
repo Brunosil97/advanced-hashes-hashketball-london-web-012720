@@ -132,7 +132,6 @@ def num_points_scored(players_name)
      end 
     end 
   end
-  binding.pry
 end 
 
 def shoe_size(players_name)
@@ -204,12 +203,17 @@ def big_shoe_rebounds
       if player[:shoe] > biggest_shoe
         biggest_shoe = player[:shoe]
         num_rebounds = player[:rebounds] 
-        binding.pry
   end 
 end 
   end 
   num_rebounds
 end 
+
+def most_points_scored(player_name)
+  game_hash.do |place, team|
+    binding.pry 
+end 
+
 
 
 
