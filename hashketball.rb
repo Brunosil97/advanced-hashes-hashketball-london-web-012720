@@ -209,7 +209,19 @@ end
   num_rebounds
 end 
 
-
+def most_points_scored(player_name)
+  game_hash.each do |place, team|
+    team.each do |attribute, data|
+      if attribute == :players 
+        data.each do |player|
+          if player[:players_name] == player_name 
+            return player[:points]
+          end 
+        end 
+    end 
+  end 
+end 
+end 
 
 
 
